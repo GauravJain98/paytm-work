@@ -1,0 +1,22 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title>
+        Profile
+    </title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename= 'style.css')}}">
+    <link rel="shortcut icon" href="{{url_for('static',filename= 'favicon.png')}}">
+</head>
+
+<body>
+    {% if name %}
+    <ul>
+        {% for i in name %}
+        <li>{{ i }}</li>
+        {% endfor %} {% else %}
+        <h1>Log In</h1>
+        {% endif %}
+</body>
+
+</html>
