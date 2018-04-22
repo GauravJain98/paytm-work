@@ -1,0 +1,56 @@
+{% extends "base.html" %}{% block title %} Contact Us {% endblock %} {% block content %}
+<div class="m-3 p-3 row border rounded border-light">
+    <div class="w-100">
+        <div class="w-100 ">
+            <h3 class="text-center">
+                <span>Contact Form</span>
+            </h3>
+            <form class="w-100" method="POST" action="/contact">
+                <div class="form-group w-100">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Name">
+                </div>
+                <div class="form-group w-100">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control w-100" id="email" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="contact">Contact Number</label>
+                    <input type="text" class="form-control" id="contact">
+                </div>
+            </form>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea type="email" class="form-control" id="description"></textarea>
+            </div>
+            </form>
+        </div>
+        <div class="w-100 text-center">
+            <h3 class="text-center">
+                <span>Contact Us</span>
+            </h3>
+            <p>
+                <span style="font-weight: 400;">Human Circle Foundation</span>
+            </p>
+            <p>
+                <span style="font-weight: 400;">Lotus Boulevard</span>
+            </p>
+            <p>
+                <span style="font-weight: 400;">Gautam Buddh Nagar</span>
+            </p>
+            <p>
+                <span style="font-weight: 400;">Sector 100, Noida 201304</span>
+            </p>
+            <p>
+                <span style="font-weight: 400;">info@HumanCircle.in</span>
+            </p>
+            <p>
+                <span style="font-weight: 400;"><strong>Website:</strong> </span>
+                <a href="http://www.humancircle.in">
+                    <span style="font-weight: 400;">www.humancircle.in</span>
+                </a>
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}
