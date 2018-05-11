@@ -14,5 +14,4 @@ git update-index --no-skip-worktree app.py
 git update-index --skip-worktree app.py
 
 #get list of ignored files
-
 git ls-files -v . | grep ^S
